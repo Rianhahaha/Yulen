@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Krem"
+    tools:context=".Hal_utamaActivity"
+
+ >
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="2dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/hr" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="255dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/logo_yulen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ListView
+        android:id="@+id/grupList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0"
+        tools:listitem="@layout/item_grup">
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:divider="@drawable/hr"
+android:dividerPadding="200dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+
+        <Button
+            android:id="@+id/btnBuatGrup"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+
+            android:drawableStart="@drawable/plus"
+            android:padding="5dp"
+            android:background="@drawable/btn_menu"
+            android:fontFamily="@font/fredoka"
+            android:text="@string/buat_grup"
+            android:textAllCaps="false"
+            android:textSize="12dp"
+            android:textColor="@color/Hijau"
+
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="146dp" />
+        <Space
+            android:layout_width="40dp"
+            android:layout_height="wrap_content">
+
+        </Space>
+
+
+        <Button
+            android:id="@+id/btnMasukGrup"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:drawableStart="@drawable/add_grup"
+            android:padding="10dp"
+            android:background="@drawable/btn_menu"
+            android:fontFamily="@font/fredoka"
+            android:textAllCaps="false"
+            android:textSize="12dp"
+            android:textColor="@color/Hijau"
+            android:text="@string/masuk_grup"
+            android:clickable="true"
+
+            tools:layout_editor_absoluteX="233dp"
+            tools:layout_editor_absoluteY="168dp"
+            android:focusable="true" />
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content">
+
+        </Space>
+        <Button
+            android:id="@+id/btnRiwayat"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:drawableStart="@drawable/riwayat"
+            android:padding="13dp"
+            android:background="@drawable/btn_menu"
+            android:fontFamily="@font/fredoka"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textColor="@color/Hijau"
+
+
+
+
+            tools:layout_editor_absoluteX="233dp"
+            tools:layout_editor_absoluteY="168dp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

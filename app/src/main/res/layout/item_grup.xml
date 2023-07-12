@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/form"
+
+    >
+
+
+    <TextView
+        android:id="@+id/Judul_grup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fontFamily="@font/fredoka"
+        android:text="@string/judul_grup"
+        android:drawableEnd="@drawable/ic_baseline_person_pin_24"
+        android:drawablePadding="150dp"
+        android:textColor="@color/Hijau"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/KeterGrup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fontFamily="@font/fredoka"
+        android:text="@string/keterangan_grup"
+        android:textColor="@color/Hijau"
+        android:textSize="20sp"/>
+
+</LinearLayout>

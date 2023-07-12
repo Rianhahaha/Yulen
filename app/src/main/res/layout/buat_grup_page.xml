@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Krem"
+    tools:context=".BuatActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/fredoka"
+        android:text="@string/buat_grup"
+        android:textColor="@color/Hijau"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="-457dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/hr" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="331dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/formNamaGrup"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="30dp"
+                android:background="@drawable/form"
+                android:ems="10"
+                android:fontFamily="@font/fredoka"
+
+                android:hint="@string/masukkan_nama_grup"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="@color/Hijau"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <EditText
+                android:id="@+id/formTanggalBuka"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+
+                android:background="@drawable/form"
+                android:ems="10"
+                android:fontFamily="@font/fredoka"
+                android:hint="@string/masukkan_tanggal_buka"
+
+                android:inputType="datetime"
+                android:paddingLeft="10dp"
+                android:textColor="@color/Hijau"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formNominal" />
+
+            <EditText
+                android:id="@+id/formTanggalTutup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+
+                android:background="@drawable/form"
+                android:ems="10"
+                android:fontFamily="@font/fredoka"
+                android:hint="@string/masukkan_tanggal_tutup"
+
+                android:inputType="datetime"
+                android:paddingLeft="10dp"
+                android:textColor="@color/Hijau"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formTanggalBuka" />
+
+            <EditText
+                android:id="@+id/formNominal"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+
+                android:background="@drawable/form"
+                android:drawableStart="@drawable/rp"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:fontFamily="@font/fredoka"
+                android:hint="@string/masukkan_nominal"
+
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:textColor="@color/Hijau"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formKetGrup" />
+
+            <EditText
+                android:id="@+id/formKetGrup"
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp"
+
+                android:background="@drawable/form"
+                android:ems="10"
+                android:fontFamily="@font/fredoka"
+                android:hint="@string/masukkan_keterangan"
+
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="@color/Hijau"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/formNamaGrup" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnBuatGrup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn"
+        android:fontFamily="@font/fredoka"
+        android:text="@string/buat_grup"
+        android:textAllCaps="false"
+
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
